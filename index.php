@@ -49,6 +49,9 @@ switch(@$_SERVER['REDIRECT_URL']){
     case "/best2022":
          require_once "$path/public/best2022.php";
     break;
+    case "/best2021":
+         require_once "$path/public/best2021.php";
+    break;
     case "/top250":
          require_once "$path/public/top250.php";
     break;

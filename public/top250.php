@@ -24,7 +24,7 @@
 							<? $gameItemQuery = $db->query("SELECT * FROM `game` WHERE id>0 AND `top250`=1 ORDER BY `id`");
 							$numRows = $gameItemQuery->rowCount();
 							foreach ($gameItemQuery as $rows) { ?>
-								<div class="content__item" data-content="">
+								<div class="content__item" data-content="" onload='displayInfo()'>
 									<!-- ссылка на cardGame с productid равное id из бд -->
 									<a href="/cardGame?productid=<? echo $rows['id'] ?>" class="linkCard" data-idproduct=<? echo $rows['id'] ?>>
 										<div class="image__item">
@@ -56,4 +56,5 @@
 		</main>
 	</div>
 </body>
+<script>displayInfo();</script>
 </html>

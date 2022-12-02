@@ -15,12 +15,12 @@
 				</section>
 				<!-- =========main content==================================== -->
 				<section class="content">
-					<h1 class="title__content">Лучшее в 2022</h1>
+					<h1 class="title__content">Лучшее в 2021</h1>
 					<h4 class="subtitle__content"></h4>
 
 					<div class="content__block">
 						<div class="content__items">
-							<?$gameItemQuery = $db->query("SELECT * FROM `game` WHERE id>0 AND `best2022`=1 ORDER BY `id`");
+							<?$gameItemQuery = $db->query("SELECT * FROM `game` WHERE id>0 AND `best2021`=1 ORDER BY `id`");
 								$numRows=$gameItemQuery->rowCount();
 								foreach($gameItemQuery as $rows){?>
 											<div class="content__item" data-content="" onload='displayInfo()'>

@@ -49,7 +49,7 @@ require_once "$path/system/db.php";
             for(let row of data){
                 // вывод карточки  
                 contentAction.innerHTML +=`
-										<div class="content__item favGame" data-content="">
+										<div class="content__item favGame" data-content="" onload='displayInfo()'>
 											<!-- ссылка на cardGame с productid равное id из бд -->
 											<a href="/cardGame?productid=${row.id}"  class="linkCard" data-idproduct=${row.id}>
 												<div class="image__item">
@@ -73,7 +73,9 @@ require_once "$path/system/db.php";
 											</div>
 										</div>
 				`
+				displayInfo();
             }      
         })
+		
 </script>
 </html>

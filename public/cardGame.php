@@ -66,10 +66,11 @@ session_start();
                                                     </div> 
                                                 <?}?>
                                                     
-                                                <div class="desc__cardGame">
+                                                <article class="desc__cardGame">
                                                     <div class ="desc__aboutGame">Об игре</div>   
-                                                    <div class ="desc__info">${row.description}</div>  
-                                                </div> 
+                                                    <div class ="desc__info" >${row.description}</div> 
+                                                    <button id="btn" class="desc__btnMore">Читать далее</button>
+                                                </article> 
                                                 <div class ="info__cardGame"> 
                                                     <div class ="cardGame__info releaseGame__cardGame">
                                                         <span class ="info__definition">Дата релиза:</span>
@@ -112,6 +113,32 @@ session_start();
                                              ` 
             
             }  
+            let btnMore = document.querySelector(".desc__btnMore");
+            let descInfo = document.querySelector(".desc__info");
+            
+            btn.onclick = () =>{
+                if (btn.classList.contains("hide")) {
+                    descInfo.style.maxHeight = "15rem";
+                    descInfo.style.overflow = "hidden";
+                    btn.innerText = "Читать дплее";
+                    btn.classList.remove("hide");
+
+                    window.scrollTo({
+                        top: 0,
+                        left: 0,
+                        behavior: 'smooth'
+                    });
+                } 
+                else{
+                    descInfo.style.maxHeight = "100%";
+                    descInfo.style.overflow = "none";
+                    btn.innerText = "Скрыть";
+                    btn.classList.add("hide"); 
+                }    
+            }
+            
+
+
             let spanFavorite = document.querySelector(".spanFavorite");
             // если в localstorage при получении id == 'В избранном'
             if (localStorage.getItem(fav.dataset.favid)=="В избранном") {

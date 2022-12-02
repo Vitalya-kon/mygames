@@ -8,7 +8,7 @@ require_once "$path/system/db.php";
 <html lang="en">
 <? include_once "$path/private/head.php"; ?>
 
-<body>
+<body onload='displayInfo()'>
 	<div class="_container">
 		<? include_once "$path/private/header.php"; ?>
 		<main class="startPage">
@@ -50,7 +50,7 @@ require_once "$path/system/db.php";
             for(let row of data){
                 // вывод карточки  
                 contentAction.innerHTML +=`
-										<div class="content__item favGame" data-content="">
+										<div class="content__item favGame" data-content=""'>
 											<!-- ссылка на cardGame с productid равное id из бд -->
 											<a href="/cardGame?productid=${row.id}"  class="linkCard" data-idproduct=${row.id}>
 												<div class="image__item">
@@ -74,7 +74,10 @@ require_once "$path/system/db.php";
 											</div>
 										</div>
 				`
-            }      			
+				displayInfo();
+            }  
+			  			
         })		
 </script>
+
 </html>

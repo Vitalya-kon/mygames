@@ -4,7 +4,7 @@ session_start();
 $path = $_SERVER['DOCUMENT_ROOT'];
 require_once "$path/system/db.php";
 
-$query = $db->query("SELECT * FROM `game` WHERE platform LIKE '%PC%' OR '%Pc%' ORDER BY releaseGame DESC ");
+$query = $db->query("SELECT * FROM `game` WHERE platform LIKE '%PC%' OR platform LIKE '%Pc%' ORDER BY releaseGame DESC ");
 
 foreach($query as $row){
     // без создания экземпляра класса создается переменная array как пустой массив

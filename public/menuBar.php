@@ -9,7 +9,7 @@
 								<span class="title__menu">Лучшее</span>
 								<ul>
 									<li><a href="/best2022">Лучшее в 2022</a></li>
-									<li><a href="">Лучшее в 2021</a></li>
+									<li><a href="/best2021">Лучшее в 2021</a></li>
 									<li><a href="/top250">Топ 250 игр</a></li>
 								</ul>
 							</div>

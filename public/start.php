@@ -32,7 +32,7 @@ require_once "$path/system/db.php";
 								foreach ($gameItemQuery as $rows) {
 
 								?>
-									<div class="content__item" data-content="">
+									<div class="content__item" data-content="" onload='displayInfo()'>
 										<!-- ссылка на cardGame с productid равное id из бд -->
 										<a href="/cardGame?productid=<? echo $rows['id'] ?>" class="linkCard" data-idproduct=<? echo $rows['id'] ?>>
 											<div class="image__item">
@@ -64,5 +64,6 @@ require_once "$path/system/db.php";
 		</main>
 	</div>
 </body>
-<script type="text/javascript" src="../js/sidbar.js"></script>
+<script>displayInfo();</script>
+<scriptt type="text/javascript" src="../js/sidbar.js"></scriptt>
 </html>

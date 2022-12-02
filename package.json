@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "mysql2": "^2.3.3",
+    "readmore-js": "^2.2.1",
     "theia-sticky-sidebar": "^1.7.0"
   }
 }
