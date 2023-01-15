@@ -38,7 +38,7 @@ require_once "$path/system/sysAvatar.php";
                             </form>
                         </div>
                         <div class="profile__info">
-                            <p class="profile__info-p">Твой никнейм : <span> <? echo $_SESSION["login"] ?></span></p>
+                            <p class="profile__info-p">Твое Имя : <span> <? echo $_SESSION["login"] ?></span></p>
                             <p class="profile__info-p">Твой email : <span><? echo $_SESSION["email"] ?></span></p>
                             <p class="profile__info-p">Твой статус :<span> <? echo $_SESSION["status"] ?></span></p>
                         </div>

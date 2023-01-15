@@ -1,5 +1,10 @@
-<header class="header">
-    <div class="header__content">
+<?if(isset($_POST['logOut'])){
+    $_SESSION['login']=NULL; // Ставим значение 0
+    $_SESSION['auth']=NULL; // Ставим значение 0
+    $_SESSION['status']=NULL;
+    @header("Location: /start");
+}?><header class="header ">
+    <div class="header__content ">
         <div class="logo">
             <div class="logo__header">
                 <a class="gradient-text" href="/start">myGames</a>
@@ -42,25 +47,10 @@
                         // если существует $_SESSION['login'] и $_SESSION['status'] == "admin"
                         if (isset($_SESSION['login']) && $_SESSION['status'] == "admin") {
                             echo "<a class='modal' href='/admin'>Admin</a>";
-                        } ?>
+                        }?>
                         <form action="" method="post">
                             <input type="submit" name="logOut" value="выход">
                         </form>
-                        <?
-                        // если нажата кнопка $_POST['logOut']
-                        if (isset($_POST['logOut'])) {
-                            // удаляем $_SESSION['login']
-                            $_SESSION['login'] = NULL;
-                            // удаляем $_SESSION['auth']
-                            $_SESSION['auth'] = NULL;
-                            // переменная time()
-                            $time2 = time();
-                            // вычитаем время для удалении кук
-                            $time2 = $time2 - 60 * 60 * 24 * 7;
-                            setcookie("login", $_POST['login'], $time);
-                            setcookie('key', $keyCookie, $time);
-                            header("Location:/start");
-                        } ?>
                     </div>
             <? }
             } ?>

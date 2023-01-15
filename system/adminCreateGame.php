@@ -80,85 +80,53 @@ if(isset($_POST['createGame'])){
             move_uploaded_file($imgGame2["tmp_name"], $uploadfile2) &&
             move_uploaded_file($imgGame3["tmp_name"], $uploadfile3) ){
            // запускаем функцию setAvatar с аргументами $nameGame,$nameGame2,$nameGame3
-           setGame($nameGame,$nameGame2,$nameGame3);
+           if ($_POST["listAdmin"] == 0) {
+            setGame($nameGame,$nameGame2,$nameGame3,null);
+           }
+           if ($_POST["listAdmin"] == 1){
+            setGame($nameGame,$nameGame2,$nameGame3,1);
+           }
+           if ($_POST["listAdmin"] == 2){
+            setGame($nameGame,$nameGame2,$nameGame3,2);
+           }
+           if ($_POST["listAdmin"] == 3){
+            setGame($nameGame,$nameGame2,$nameGame3,3);
+           }
+           
            // и возвращаем true
            return true;
        }
        // иначе false
        else return false;
    }
+// ----------------Похожие игры --------------------------
+//    function similar($similar){
+//     if (in_array("Экшен" , $similar)) {
+//         return "action";
+//     }
+//    }
 // -------------------ЗАПИСЬ НОВОЙ ИГРЫ В БД-------------------
-   function setGame($nameGame,$nameGame2,$nameGame3){
+   
+   function setGame($nameGame,$nameGame2,$nameGame3,$list){
     // если в select с name listAdmin наш option равен значению 1
-       if ($_POST["listAdmin"] == 0) {
         $db = new PDO("mysql:dbhost=localhost;dbname=diplom","root","root");
         // делаем запрос (Добавить в game (name,releaseGame,genres,platform,link_img,link_img-2,link_img-3,description ,best2022)
         // значения (:name,:dataAdd, :genres, :platform, :link_img,:link_img2,:link_img3, :desc,1))
-        $newStyle = $db -> prepare("INSERT INTO `game` (`name`,`releaseGame`,`genres`,`platform`,`video`,`link_img`,`link_img-2`,`link_img-3`,`description`,`best2022`)
-                         VALUES (:name,:dataAdd, :genres, :platform,:video, :link_img,:link_img2,:link_img3, :desc,null)");
+        $newStyle = $db -> prepare("INSERT INTO `game` (`name`,`releaseGame`,`genres`,`platform`,`video`,`alt`,`link_img`,`link_img-2`,`link_img-3`,`description`,`best2022`)
+                         VALUES (:name,:dataAdd, :genres, :platform,:video,:alt,:link_img,:link_img2,:link_img3, :desc,:list)");
                 $newStyle -> execute([
                     ":name" => $_POST['nameAddGame'],
                     ":dataAdd" => $_POST['dataAddGame'],
                     ":genres" => $_POST['genresAddGame'],
                     ":platform" => $_POST['platformsAddGame'],
                     ":video" => $_POST['videoAddGame'],
+                    ":alt" => $_POST['nameAddGame'],
                     ":link_img" => $nameGame,
                     ":link_img2" => $nameGame2,
                     ":link_img3" => $nameGame3,
-                    ":desc" => $_POST['descriptionAddGame']
+                    ":desc" => $_POST['descriptionAddGame'],
+                    ":list" => $list
                 ]);  
-        }
-       if ($_POST["listAdmin"] == 1) {
-        $db = new PDO("mysql:dbhost=localhost;dbname=diplom","root","root");
-        // делаем запрос (Добавить в game (name,releaseGame,genres,platform,link_img,link_img-2,link_img-3,description ,best2022)
-        // значения (:name,:dataAdd, :genres, :platform, :link_img,:link_img2,:link_img3, :desc,1))
-        $newStyle = $db -> prepare("INSERT INTO `game` (`name`,`releaseGame`,`genres`,`platform`,`video`,`link_img`,`link_img-2`,`link_img-3`,`description`,`best2022`)
-                         VALUES (:name,:dataAdd, :genres, :platform,:video, :link_img,:link_img2,:link_img3, :desc,1)");
-                $newStyle -> execute([
-                    ":name" => $_POST['nameAddGame'],
-                    ":dataAdd" => $_POST['dataAddGame'],
-                    ":genres" => $_POST['genresAddGame'],
-                    ":platform" => $_POST['platformsAddGame'],
-                    ":video" => $_POST['videoAddGame'],
-                    ":link_img" => $nameGame,
-                    ":link_img2" => $nameGame2,
-                    ":link_img3" => $nameGame3,
-                    ":desc" => $_POST['descriptionAddGame']
-                ]);  
-        }
-        // если в select с name listAdmin наш option равен значению 2
-       if ($_POST["listAdmin"] == 2) {
-           $db = new PDO("mysql:dbhost=localhost;dbname=diplom","root","root");
-        $newStyle = $db -> prepare("INSERT INTO `game` (`name`,`releaseGame`,`genres`,`platform`,`video`,`link_img`,`link_img-2`,`link_img-3`,`description`,`best2021`) 
-                        VALUES (:name,:dataAdd, :genres, :platform,:video, :link_img,:link_img2,:link_img3, :desc,1)");
-                $newStyle -> execute([
-                    ":name" => $_POST['nameAddGame'],
-                    ":dataAdd" => $_POST['dataAddGame'],
-                    ":genres" => $_POST['genresAddGame'],
-                    ":platform" => $_POST['platformsAddGame'],
-                    ":video" => $_POST['videoAddGame'],
-                    ":link_img" => $nameGame,
-                    ":link_img2" => $nameGame2,
-                    ":link_img3" => $nameGame3,
-                    ":desc" => $_POST['descriptionAddGame']
-                ]);  
-        }
-       if ($_POST["listAdmin"] == 3) {
-           $db = new PDO("mysql:dbhost=localhost;dbname=diplom","root","root");
-        $newStyle = $db -> prepare("INSERT INTO `game` (`name`,`releaseGame`,`genres`,`platform`,`video`,`link_img`,`link_img-2`,`link_img-3`,`description`,`top250`) 
-                                VALUES (:name,:dataAdd, :genres, :platform,:video, :link_img,:link_img2,:link_img3, :desc,1)");
-                $newStyle -> execute([
-                    ":name" => $_POST['nameAddGame'],
-                    ":dataAdd" => $_POST['dataAddGame'],
-                    ":genres" => $_POST['genresAddGame'],
-                    ":platform" => $_POST['platformsAddGame'],
-                    ":video" => $_POST['videoAddGame'],
-                    ":link_img" => $nameGame,
-                    ":link_img2" => $nameGame2,
-                    ":link_img3" => $nameGame3,
-                    ":desc" => $_POST['descriptionAddGame']
-                ]);  
-        }
    }
     
 

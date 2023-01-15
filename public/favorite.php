@@ -74,6 +74,7 @@ require_once "$path/system/db.php";
 											</div>
 										</div>
 				`
+				displayInfo();
             }      
         })
 </script>

@@ -1,17 +1,19 @@
-/* --------------ÃÂ¿ÃÂ¾ÃÂ´ÃÂºÃÂ»Ã‘Å½Ã‘â€¡ÃÂ°ÃÂµÃÂ¼ Ã‘Ë†Ã‘â‚¬ÃÂ¸Ã‘â€žÃ‘â€šÃ‘â€¹------------------------------- */
+/* --------------ÃƒÂÃ‚Â¿ÃƒÂÃ‚Â¾ÃƒÂÃ‚Â´ÃƒÂÃ‚ÂºÃƒÂÃ‚Â»Ãƒâ€˜Ã…Â½Ãƒâ€˜Ã¢â‚¬Â¡ÃƒÂÃ‚Â°ÃƒÂÃ‚ÂµÃƒÂÃ‚Â¼ Ãƒâ€˜Ã‹â€ Ãƒâ€˜Ã¢â€šÂ¬ÃƒÂÃ‚Â¸Ãƒâ€˜Ã¢â‚¬Å¾Ãƒâ€˜Ã¢â‚¬Å¡Ãƒâ€˜Ã¢â‚¬Â¹------------------------------- */
 @import url("https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@500&display=swap');
-/* --------------------ÃÂ¿ÃÂµÃ‘â‚¬ÃÂµÃÂ¼ÃÂµÃÂ½ÃÂ½Ã‘â€¹ÃÂµ----------------------------------- */
+/* --------------------ÃƒÂÃ‚Â¿ÃƒÂÃ‚ÂµÃƒâ€˜Ã¢â€šÂ¬ÃƒÂÃ‚ÂµÃƒÂÃ‚Â¼ÃƒÂÃ‚ÂµÃƒÂÃ‚Â½ÃƒÂÃ‚Â½Ãƒâ€˜Ã¢â‚¬Â¹ÃƒÂÃ‚Âµ----------------------------------- */
 :root{
-  /* -----Ã‘Ë†Ã‘â‚¬ÃÂ¸Ã‘â€žÃ‘â€šÃ‘â€¹--------- */
+  /* -----Ãƒâ€˜Ã‹â€ Ãƒâ€˜Ã¢â€šÂ¬ÃƒÂÃ‚Â¸Ãƒâ€˜Ã¢â‚¬Å¾Ãƒâ€˜Ã¢â‚¬Å¡Ãƒâ€˜Ã¢â‚¬Â¹--------- */
   --ffLogo:"Fascinate Inline", cursive;
   --ffCaveat:'Caveat', cursive;
   --ffRubik:'Rubik', sans-serif;
-  --ffRubicMono:'Rubik Mono One', sans-serif;
+  --ffRubicMono:'Comfortaa', cursive;
+  
   --ffUbuntu:'Ubuntu', sans-serif;
   --ffDynaPuff:'DynaPuff', cursive;
   /* -----color------------- */
@@ -30,18 +32,18 @@ padding:0;
 box-sizing:border-box;
 }
 html{
-  /* Ã‘â‚¬ÃÂ°ÃÂ·ÃÂ¼ÃÂµÃ‘â‚¬Ã‘â€¹ ÃÂ¿ÃÂ¾ÃÂ´ Ã‘ÂÃÂºÃ‘â‚¬ÃÂ°ÃÂ½ 1920 */
+  /* Ãƒâ€˜Ã¢â€šÂ¬ÃƒÂÃ‚Â°ÃƒÂÃ‚Â·ÃƒÂÃ‚Â¼ÃƒÂÃ‚ÂµÃƒâ€˜Ã¢â€šÂ¬Ãƒâ€˜Ã¢â‚¬Â¹ ÃƒÂÃ‚Â¿ÃƒÂÃ‚Â¾ÃƒÂÃ‚Â´ Ãƒâ€˜Ã‚ÂÃƒÂÃ‚ÂºÃƒâ€˜Ã¢â€šÂ¬ÃƒÂÃ‚Â°ÃƒÂÃ‚Â½ 1920 */
   font-size: calc(100vw / 1920 * 10);
   
 }
-/* Ã‘â‚¬ÃÂ°ÃÂ·ÃÂ¼ÃÂµÃ‘â‚¬Ã‘â€¹ ÃÂ¿ÃÂ¾ÃÂ´ Ã‘ÂÃÂºÃ‘â‚¬ÃÂ°ÃÂ½ 1367 */
+/* Ãƒâ€˜Ã¢â€šÂ¬ÃƒÂÃ‚Â°ÃƒÂÃ‚Â·ÃƒÂÃ‚Â¼ÃƒÂÃ‚ÂµÃƒâ€˜Ã¢â€šÂ¬Ãƒâ€˜Ã¢â‚¬Â¹ ÃƒÂÃ‚Â¿ÃƒÂÃ‚Â¾ÃƒÂÃ‚Â´ Ãƒâ€˜Ã‚ÂÃƒÂÃ‚ÂºÃƒâ€˜Ã¢â€šÂ¬ÃƒÂÃ‚Â°ÃƒÂÃ‚Â½ 1367 */
 @media (max-width:1367px)  {
   html{
     font-size: calc(100vw / 1366 * 10);
     
   }
 }
-/* Ã‘â‚¬ÃÂ°ÃÂ·ÃÂ¼ÃÂµÃ‘â‚¬Ã‘â€¹ ÃÂ¿ÃÂ¾ÃÂ´ Ã‘ÂÃÂºÃ‘â‚¬ÃÂ°ÃÂ½ 1024 */
+/* Ãƒâ€˜Ã¢â€šÂ¬ÃƒÂÃ‚Â°ÃƒÂÃ‚Â·ÃƒÂÃ‚Â¼ÃƒÂÃ‚ÂµÃƒâ€˜Ã¢â€šÂ¬Ãƒâ€˜Ã¢â‚¬Â¹ ÃƒÂÃ‚Â¿ÃƒÂÃ‚Â¾ÃƒÂÃ‚Â´ Ãƒâ€˜Ã‚ÂÃƒÂÃ‚ÂºÃƒâ€˜Ã¢â€šÂ¬ÃƒÂÃ‚Â°ÃƒÂÃ‚Â½ 1024 */
 @media (max-width:1024px)  {
   html{
     font-size: calc(100vw / 1024 * 10);
@@ -72,6 +74,7 @@ font-size: inherit;
 body{
   background:var(--BodyBg) ;
   color:var(--Azure);
+
 }
 ._container{
   width: 91%;
@@ -88,6 +91,7 @@ body{
   grid-template-columns: 1fr 5fr 1fr;
   justify-content: start;
   align-items: center;
+  align-content: center;
   
 }
 .logo {
@@ -100,7 +104,7 @@ body{
 
 .gradient-text{
   display: block; 
-  color: transparent;/*ÃÂ¿Ã‘â‚¬ÃÂ¾ÃÂ·Ã‘â‚¬ÃÂ°Ã‘â€¡ÃÂ½Ã‘â€¹ÃÂ¹ Ã‘â€šÃÂµÃÂºÃ‘ÂÃ‘â€š*/
+  color: transparent;/*ÃƒÂÃ‚Â¿Ãƒâ€˜Ã¢â€šÂ¬ÃƒÂÃ‚Â¾ÃƒÂÃ‚Â·Ãƒâ€˜Ã¢â€šÂ¬ÃƒÂÃ‚Â°Ãƒâ€˜Ã¢â‚¬Â¡ÃƒÂÃ‚Â½Ãƒâ€˜Ã¢â‚¬Â¹ÃƒÂÃ‚Â¹ Ãƒâ€˜Ã¢â‚¬Å¡ÃƒÂÃ‚ÂµÃƒÂÃ‚ÂºÃƒâ€˜Ã‚ÂÃƒâ€˜Ã¢â‚¬Å¡*/
   background: conic-gradient( 
     #d9d7f1 12%, #baabda 12%,
     #baabda 33%, #e7fbbe 33%,
@@ -110,10 +114,10 @@ body{
   );
   -webkit-background-clip: text;
   background-size: 50%;
-  background-clip: text;/*ÃÂ¤ÃÂ¾ÃÂ½ Ã‘â‚¬ÃÂ¸Ã‘ÂÃ‘Æ’ÃÂµÃ‘â€šÃ‘ÂÃ‘Â ÃÂ²ÃÂ½Ã‘Æ’Ã‘â€šÃ‘â‚¬ÃÂ¸ (ÃÂ¾ÃÂ±Ã‘â‚¬ÃÂµÃÂ·ÃÂ°ÃÂµÃ‘â€šÃ‘ÂÃ‘Â) Ã‘â€šÃÂµÃÂºÃ‘ÂÃ‘â€šÃÂ° ÃÂ¿ÃÂµÃ‘â‚¬ÃÂµÃÂ´ÃÂ½ÃÂµÃÂ³ÃÂ¾ ÃÂ¿ÃÂ»ÃÂ°ÃÂ½ÃÂ°.*/
-  animation: expand-rev 0.5s ease forwards; /*ÃÂ°ÃÂ½ÃÂ¸ÃÂ¼ÃÂ°Ã‘â€ ÃÂ¸Ã‘Â expand-rev 0.5s-ÃÂ£ÃÂºÃÂ°ÃÂ·Ã‘â€¹ÃÂ²ÃÂ°ÃÂµÃ‘â€š ÃÂ²Ã‘â‚¬ÃÂµÃÂ¼Ã‘Â,
-   ÃÂºÃÂ¾Ã‘â€šÃÂ¾Ã‘â‚¬ÃÂ¾ÃÂµ ÃÂ°ÃÂ½ÃÂ¸ÃÂ¼ÃÂ°Ã‘â€ ÃÂ¸Ã‘Â ÃÂ·ÃÂ°ÃÂ½ÃÂ¸ÃÂ¼ÃÂ°ÃÂµÃ‘â€š ÃÂ´ÃÂ»Ã‘Â ÃÂ·ÃÂ°ÃÂ²ÃÂµÃ‘â‚¬Ã‘Ë†ÃÂµÃÂ½ÃÂ¸Ã‘Â ÃÂ¾ÃÂ´ÃÂ½ÃÂ¾ÃÂ³ÃÂ¾ Ã‘â€ ÃÂ¸ÃÂºÃÂ»ÃÂ°, ease-ÃÂ°ÃÂ½ÃÂ¸ÃÂ¼ÃÂ°Ã‘â€ ÃÂ¸Ã‘Â ÃÂ½ÃÂ°Ã‘â€¡ÃÂ¸ÃÂ½ÃÂ°ÃÂµÃ‘â€šÃ‘ÂÃ‘Â ÃÂ¼ÃÂµÃÂ´ÃÂ»ÃÂµÃÂ½ÃÂ½ÃÂ¾,
-  Ã‘â‚¬ÃÂ°ÃÂ·ÃÂ³ÃÂ¾ÃÂ½Ã‘ÂÃÂµÃ‘â€šÃ‘ÂÃ‘Â ÃÂ±Ã‘â€¹Ã‘ÂÃ‘â€šÃ‘â‚¬ÃÂ¾ ÃÂ¸ ÃÂ·ÃÂ°ÃÂ¼ÃÂµÃÂ´ÃÂ»Ã‘ÂÃÂµÃ‘â€šÃ‘ÂÃ‘Â ÃÂ² ÃÂºÃÂ¾ÃÂ½Ã‘â€ ÃÂµ*/
+  background-clip: text;/*ÃƒÂÃ‚Â¤ÃƒÂÃ‚Â¾ÃƒÂÃ‚Â½ Ãƒâ€˜Ã¢â€šÂ¬ÃƒÂÃ‚Â¸Ãƒâ€˜Ã‚ÂÃƒâ€˜Ã†â€™ÃƒÂÃ‚ÂµÃƒâ€˜Ã¢â‚¬Å¡Ãƒâ€˜Ã‚ÂÃƒâ€˜Ã‚Â ÃƒÂÃ‚Â²ÃƒÂÃ‚Â½Ãƒâ€˜Ã†â€™Ãƒâ€˜Ã¢â‚¬Å¡Ãƒâ€˜Ã¢â€šÂ¬ÃƒÂÃ‚Â¸ (ÃƒÂÃ‚Â¾ÃƒÂÃ‚Â±Ãƒâ€˜Ã¢â€šÂ¬ÃƒÂÃ‚ÂµÃƒÂÃ‚Â·ÃƒÂÃ‚Â°ÃƒÂÃ‚ÂµÃƒâ€˜Ã¢â‚¬Å¡Ãƒâ€˜Ã‚ÂÃƒâ€˜Ã‚Â) Ãƒâ€˜Ã¢â‚¬Å¡ÃƒÂÃ‚ÂµÃƒÂÃ‚ÂºÃƒâ€˜Ã‚ÂÃƒâ€˜Ã¢â‚¬Å¡ÃƒÂÃ‚Â° ÃƒÂÃ‚Â¿ÃƒÂÃ‚ÂµÃƒâ€˜Ã¢â€šÂ¬ÃƒÂÃ‚ÂµÃƒÂÃ‚Â´ÃƒÂÃ‚Â½ÃƒÂÃ‚ÂµÃƒÂÃ‚Â³ÃƒÂÃ‚Â¾ ÃƒÂÃ‚Â¿ÃƒÂÃ‚Â»ÃƒÂÃ‚Â°ÃƒÂÃ‚Â½ÃƒÂÃ‚Â°.*/
+  animation: expand-rev 0.5s ease forwards; /*ÃƒÂÃ‚Â°ÃƒÂÃ‚Â½ÃƒÂÃ‚Â¸ÃƒÂÃ‚Â¼ÃƒÂÃ‚Â°Ãƒâ€˜Ã¢â‚¬Â ÃƒÂÃ‚Â¸Ãƒâ€˜Ã‚Â expand-rev 0.5s-ÃƒÂÃ‚Â£ÃƒÂÃ‚ÂºÃƒÂÃ‚Â°ÃƒÂÃ‚Â·Ãƒâ€˜Ã¢â‚¬Â¹ÃƒÂÃ‚Â²ÃƒÂÃ‚Â°ÃƒÂÃ‚ÂµÃƒâ€˜Ã¢â‚¬Å¡ ÃƒÂÃ‚Â²Ãƒâ€˜Ã¢â€šÂ¬ÃƒÂÃ‚ÂµÃƒÂÃ‚Â¼Ãƒâ€˜Ã‚Â,
+   ÃƒÂÃ‚ÂºÃƒÂÃ‚Â¾Ãƒâ€˜Ã¢â‚¬Å¡ÃƒÂÃ‚Â¾Ãƒâ€˜Ã¢â€šÂ¬ÃƒÂÃ‚Â¾ÃƒÂÃ‚Âµ ÃƒÂÃ‚Â°ÃƒÂÃ‚Â½ÃƒÂÃ‚Â¸ÃƒÂÃ‚Â¼ÃƒÂÃ‚Â°Ãƒâ€˜Ã¢â‚¬Â ÃƒÂÃ‚Â¸Ãƒâ€˜Ã‚Â ÃƒÂÃ‚Â·ÃƒÂÃ‚Â°ÃƒÂÃ‚Â½ÃƒÂÃ‚Â¸ÃƒÂÃ‚Â¼ÃƒÂÃ‚Â°ÃƒÂÃ‚ÂµÃƒâ€˜Ã¢â‚¬Å¡ ÃƒÂÃ‚Â´ÃƒÂÃ‚Â»Ãƒâ€˜Ã‚Â ÃƒÂÃ‚Â·ÃƒÂÃ‚Â°ÃƒÂÃ‚Â²ÃƒÂÃ‚ÂµÃƒâ€˜Ã¢â€šÂ¬Ãƒâ€˜Ã‹â€ ÃƒÂÃ‚ÂµÃƒÂÃ‚Â½ÃƒÂÃ‚Â¸Ãƒâ€˜Ã‚Â ÃƒÂÃ‚Â¾ÃƒÂÃ‚Â´ÃƒÂÃ‚Â½ÃƒÂÃ‚Â¾ÃƒÂÃ‚Â³ÃƒÂÃ‚Â¾ Ãƒâ€˜Ã¢â‚¬Â ÃƒÂÃ‚Â¸ÃƒÂÃ‚ÂºÃƒÂÃ‚Â»ÃƒÂÃ‚Â°, ease-ÃƒÂÃ‚Â°ÃƒÂÃ‚Â½ÃƒÂÃ‚Â¸ÃƒÂÃ‚Â¼ÃƒÂÃ‚Â°Ãƒâ€˜Ã¢â‚¬Â ÃƒÂÃ‚Â¸Ãƒâ€˜Ã‚Â ÃƒÂÃ‚Â½ÃƒÂÃ‚Â°Ãƒâ€˜Ã¢â‚¬Â¡ÃƒÂÃ‚Â¸ÃƒÂÃ‚Â½ÃƒÂÃ‚Â°ÃƒÂÃ‚ÂµÃƒâ€˜Ã¢â‚¬Å¡Ãƒâ€˜Ã‚ÂÃƒâ€˜Ã‚Â ÃƒÂÃ‚Â¼ÃƒÂÃ‚ÂµÃƒÂÃ‚Â´ÃƒÂÃ‚Â»ÃƒÂÃ‚ÂµÃƒÂÃ‚Â½ÃƒÂÃ‚Â½ÃƒÂÃ‚Â¾,
+  Ãƒâ€˜Ã¢â€šÂ¬ÃƒÂÃ‚Â°ÃƒÂÃ‚Â·ÃƒÂÃ‚Â³ÃƒÂÃ‚Â¾ÃƒÂÃ‚Â½Ãƒâ€˜Ã‚ÂÃƒÂÃ‚ÂµÃƒâ€˜Ã¢â‚¬Å¡Ãƒâ€˜Ã‚ÂÃƒâ€˜Ã‚Â ÃƒÂÃ‚Â±Ãƒâ€˜Ã¢â‚¬Â¹Ãƒâ€˜Ã‚ÂÃƒâ€˜Ã¢â‚¬Å¡Ãƒâ€˜Ã¢â€šÂ¬ÃƒÂÃ‚Â¾ ÃƒÂÃ‚Â¸ ÃƒÂÃ‚Â·ÃƒÂÃ‚Â°ÃƒÂÃ‚Â¼ÃƒÂÃ‚ÂµÃƒÂÃ‚Â´ÃƒÂÃ‚Â»Ãƒâ€˜Ã‚ÂÃƒÂÃ‚ÂµÃƒâ€˜Ã¢â‚¬Å¡Ãƒâ€˜Ã‚ÂÃƒâ€˜Ã‚Â ÃƒÂÃ‚Â² ÃƒÂÃ‚ÂºÃƒÂÃ‚Â¾ÃƒÂÃ‚Â½Ãƒâ€˜Ã¢â‚¬Â ÃƒÂÃ‚Âµ*/
   cursor: pointer;
 }
 .gradient-text:hover{
@@ -195,7 +199,7 @@ body{
 
 }
 .header__authorization{
- 
+ padding: 0 5.5rem 0 0;
 }
 .header__authorization ul {
   display: flex;
@@ -299,7 +303,7 @@ body{
 .listCardGame.selected {
   background:yellow
 }
-/* ------------ÃÅ“ÃÂ¾ÃÂ´ÃÂ°ÃÂ»Ã‘Å’ÃÂ½ÃÂ¾ÃÂµ ÃÂ¾ÃÂºÃÂ½ÃÂ¾ ÃÂ¿ÃÂ¾ÃÂ¸Ã‘ÂÃÂºÃÂ°---------------- */
+/* ------------ÃƒÂÃ…â€œÃƒÂÃ‚Â¾ÃƒÂÃ‚Â´ÃƒÂÃ‚Â°ÃƒÂÃ‚Â»Ãƒâ€˜Ã…â€™ÃƒÂÃ‚Â½ÃƒÂÃ‚Â¾ÃƒÂÃ‚Âµ ÃƒÂÃ‚Â¾ÃƒÂÃ‚ÂºÃƒÂÃ‚Â½ÃƒÂÃ‚Â¾ ÃƒÂÃ‚Â¿ÃƒÂÃ‚Â¾ÃƒÂÃ‚Â¸Ãƒâ€˜Ã‚ÂÃƒÂÃ‚ÂºÃƒÂÃ‚Â°---------------- */
 #modalHeader{
   min-height:100px;
   position:absolute;
@@ -329,6 +333,12 @@ body{
   grid-template-columns: 1fr 6fr;
   width: 100%;
 }
+@media (max-width:900px)  {
+  .main__column{
+    display: block;
+    width: 90%;
+  }
+}
 .section__menu{
   width: 23%;
   height: 100%;
@@ -343,9 +353,15 @@ body{
   gap: 3.1rem;
   
 }
+
 .sidebar{
   position: relative;
   padding:8.4rem 0px 3.3rem 0rem;
+}
+@media (max-width:900px)  {
+  .sidebar{
+    display: none;
+  }
 }
 .menu__bar ul{
   display: grid;
@@ -399,13 +415,15 @@ body{
 /* -------------------main content------------------------------- */
 .content {
   width: 100%;
-  margin: 5.5rem 0 27rem 5.5rem;
+  margin: 8.5rem 0 27rem 5.5rem;
   position: relative;
 }
 .title__content {
+  display: inline;
   font-size: 5.3rem;
   letter-spacing: 0.5rem;
   font-family: var(--ffRubicMono);
+  text-transform: uppercase;
 }
 .subtitle__content {
   font-size: 2.4rem;
@@ -415,11 +433,17 @@ body{
   font-family: var(--ffUbuntu);
 }
 .content__block {
-  margin: 6.1rem 0 0 0;
+  margin: 6.1rem 9.5rem 0 0;
 }
 @media (max-width:1024px){
   .content__item{
     flex-grow: 1;
+  }
+}
+@media (max-width:900px){
+  .content__item{
+    flex:1 1 100%;
+    height: 250px;
   }
 }
 .content__items{
@@ -427,6 +451,7 @@ body{
   flex-wrap: wrap;
   gap: 0 2.7rem;
 }
+
 .content__item {
   width:23%;
   border-radius: 10px;
@@ -434,6 +459,12 @@ body{
   margin: 0 0 2.4rem 0;
   position: relative;
   transition: all .3s;
+}
+@media (max-width:900px){
+  .image__item>img{
+    
+    min-height: 150%;
+  }
 }
 .image__item{
   height: 21rem;
@@ -460,7 +491,7 @@ body{
   font-family: var(--ffCaveat);
   display: flex;
   align-items: center;
-  margin: 2.5rem 0 0 0;
+  margin: 0;
 }
 .subtitle__mainContent{
   width: 60%;
@@ -993,7 +1024,7 @@ svg {
   grid-template-columns: 3fr 2fr;
   padding: 0;
   width: 100%;
-  margin: 2.4rem 0 0 1.5rem;
+  margin: 0 ;
   column-gap: 4.0rem; 
 }
 .favorite__cardGame{
@@ -1020,7 +1051,6 @@ svg {
 .img__cardGame{
   display: grid;
   /* width: 500px;*/
-  height: 25rem;
   gap: 1.0rem;
   grid-template-columns: repeat(2, 22rem);
   grid-template-rows: repeat(2,26rem);
@@ -1062,7 +1092,7 @@ svg {
   margin: 1rem 0 0 0;
   display: inline-block;
   border-radius: 15px;
-  padding: 5.2rem 6.4rem 5.2rem 0;
+  padding: 5.2rem 13.4rem 5.2rem 0;
 
 }
 .desc__aboutGame{
@@ -1076,10 +1106,11 @@ font-family: var(--ffRubicMono);
   line-height: 1.5;
   max-height:15rem;
   overflow: hidden;
+  transition: .4s;
   
 }
 .desc__btnMore{
-  width: 15%;
+  width: 25%;
   background: inherit;
   color: rgb(208, 206, 206);
   font-family: var(--ffUbuntu);
@@ -1101,11 +1132,11 @@ font-family: var(--ffRubicMono);
   width: 100%;
 }
 .cardGame__info{
-  width: 70%;
+  width: 100%;
   gap:6.2rem;
   display: flex;
   justify-content:space-between;
-  padding: 1.4rem 0;
+  padding: 1.7rem 13.4rem 0 0;
 }
 .info__definition {
   font-family: var(--ffRubicMono);
@@ -1122,6 +1153,44 @@ font-family: var(--ffRubicMono);
 .coment__cardGame>h2{
   font-family: var(--ffRubicMono);
   font-size: 3.2rem;
+}
+.similar__cardGame{
+  margin: 4.5rem 0 0 0;
+}
+.similar__title{
+  font-size: 3.4rem;
+  text-transform: uppercase;
+  font-family: var(--ffCaveat);
+  letter-spacing: 0.4rem;
+}
+.schowSimilar{
+  display: grid;
+  gap: 1.9rem;
+  margin: 3.9rem 0 0 0;
+}
+.schowSimilar div{
+  width: 45rem;
+  background:#252525;
+  border-radius: 1.5rem;
+  transition: .5s;
+}
+.schowSimilar div:hover{
+  background:#424141;
+}
+.link__similar img{
+  border-radius: 1.5rem 0 0 1.5rem;
+}
+.schowSimilar div>a{
+ display: flex;
+ align-items: center;
+ gap: 1.8rem;
+}
+.name__similar{
+  padding: 0 0 0 .8rem;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  font-family: var(--ffUbuntu);
+  flex-wrap: wrap;
 }
 /* =======================Video==================================== */
 .video__cardGame{
@@ -1155,7 +1224,7 @@ font-family: var(--ffRubicMono);
   letter-spacing: .4rem;
 }
 .reviewsText{
-  width: 72%;
+  width: 86%;
   height: 10.8rem;
   font-size: 1.9rem;
   border-radius: 1.2rem;
@@ -1189,15 +1258,80 @@ font-family: var(--ffRubicMono);
   gap: 30px;
   margin: 5.5rem 0 0 0 ;
 }
-.feedBack__cardGame p{
+.reviwsComment{
   font-size: 2.5rem;
   color:var(--Azure);
+  padding: 2rem 0 0 0;
 }
 .feedBack__cardGame div{
   background:#2c2c2c;
   border-radius: 1.2rem;
-  padding: 1rem;
+  padding: 2rem;
 
+}
+.reviwsSender{
+  font-family: var(--ffRubicMono);
+  font-size: 2.2rem;
+  padding: 0 2rem 0 0;
+  text-transform: uppercase;
+}
+.reviwsDate{
+  font-family: var(--ffUbuntu);
+  font-size: 1.7rem;
+}
+.rating-area {
+	overflow: hidden;
+	width: 26.5rem;
+	margin:3.3rem 0 0 -3rem;
+}
+.rating-area:not(:checked) > input {
+	display: none;
+}
+.rating-area:not(:checked) > label {
+	float: right;
+	width: 42px;
+	padding: 0;
+	cursor: pointer;
+	font-size: 32px;
+	line-height: 32px;
+	color: lightgrey;
+	text-shadow: 1px 1px #bbb;
+}
+.rating-area:not(:checked) > label:before {
+	content: '★';
+}
+.rating-area > input:checked ~ label {
+	color: gold;
+	text-shadow: 1px 1px #c60;
+}
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label {
+	color: gold;
+}
+.rating-area > input:checked + label:hover,
+.rating-area > input:checked + label:hover ~ label,
+.rating-area > input:checked ~ label:hover,
+.rating-area > input:checked ~ label:hover ~ label,
+.rating-area > label:hover ~ input:checked ~ label {
+	color: gold;
+	text-shadow: 1px 1px goldenrod;
+}
+.rating-area > label:active {
+	position: relative;
+}
+.ratingShow{
+  font-size: 1.7rem;
+  font-family: var(--ffRubik);
+  
+}
+.rating__res-true{
+  font-size: 1.9rem;
+  font-family: var(--ffRubicMono);
+  color: rgb(194, 194, 0);
+}
+.rating__res-false{
+  font-size: 1.7rem;
+  font-family: var(--ffRubicMono);
 }
 /* ------------------------Profile------------------------------- */
 .profile__hello{
@@ -1207,7 +1341,7 @@ font-family: var(--ffRubicMono);
   font-family: var(--ffCaveat);
   display: flex;
   align-items: center;
-  margin: 2.7rem 0 0 4.8rem;
+  margin: 0 0 0 4.8rem;
 }
 .profile__long{
   flex: 1;

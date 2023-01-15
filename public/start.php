@@ -25,7 +25,7 @@ require_once "$path/system/db.php";
 								<?
 
 								// переменная $gameItemQuery с запросом в бд (выбрать все из game где id больше 0 сортировка по id)
-								$gameItemQuery = $db->query("SELECT * FROM `game` WHERE id>0  ORDER BY `id`");
+								$gameItemQuery = $db->query("SELECT * FROM `game` WHERE id>0  ORDER BY `id` DESC");
 								// // переменная $numRows = Возвращает количество строк, затронутых последним SQL-запросом
 								$numRows = $gameItemQuery->rowCount();
 								// перебор $gameItemQuery как $row
@@ -64,6 +64,7 @@ require_once "$path/system/db.php";
 		</main>
 	</div>
 </body>
+
 <script>displayInfo();</script>
 <scriptt type="text/javascript" src="../js/sidbar.js"></scriptt>
 </html>

@@ -3,7 +3,7 @@ session_start();
 $path=$_SERVER['DOCUMENT_ROOT'];
 require_once "$path/system/db.php";
 
-$queryShowRev = $db -> query("SELECT reviews.login, reviews.uid,reviews.text,game.id FROM `reviews`,`game` WHERE reviews.uid=game.id ORDER BY reviews.id DESC ")  ;
+$queryShowRev = $db -> query("SELECT reviews.login, reviews.uid,reviews.text,reviews.date,game.id FROM `reviews`,`game` WHERE reviews.uid=game.id ORDER BY reviews.id DESC ")  ;
 
 foreach($queryShowRev as $row){
     // без создания экземпляра класса создается переменная array как пустой массив
@@ -11,7 +11,8 @@ foreach($queryShowRev as $row){
     // в массив записываем 
    $array[] = [ "id" => $row['id'],
                 "text" => $row['text'],
-                "login"=>$row['login']
+                "login"=>$row['login'],
+                "date" => $row['date']
                 ];
   
 
