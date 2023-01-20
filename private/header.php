@@ -10,6 +10,20 @@
                 <a class="gradient-text" href="/start">myGames</a>
             </div>
         </div>
+        <!-- <div class="header__burger">
+            <img src="../img/icons/burger.svg" alt="">
+        </div>
+        <div class="burger__modal burgerModal">
+            <div class="burgerModal__header">
+                <div class="burgerModal__search">
+                   
+                <div class="burgerModal__close">
+                    <img src="../img/icons/close.svg" alt="close" srcset="">
+                </div>
+            </div>
+            <div class="burgerModal__autorization"></div>
+            <div class="burgermodal__menuBar"></div>
+        </div> -->
         <div class="header__search">
             <form action="" method="get">
                 <input class="searchInput" type="text" name="searchHeader" id="searchHeader" autocomplete="off" placeholder="найти игру">
