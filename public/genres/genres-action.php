@@ -1,6 +1,4 @@
 <?
-
-session_start();
 $path = $_SERVER['DOCUMENT_ROOT'];
 require_once "$path/system/db.php";
 ?>
@@ -74,7 +72,9 @@ require_once "$path/system/db.php";
 											</div>
 										</div>
 				`
-				displayInfo();
+				if (window.matchMedia("(min-width: 450px)").matches) {
+					displayInfo();
+				}	
             }  
 			  			
         })		

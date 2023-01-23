@@ -582,7 +582,7 @@ body {
       font-size: 3.1rem; } }
   @media (max-width: 450px) {
     .name__item {
-      font-size: 5.4rem;
+      font-size: 6.4rem;
       padding: 4.3rem 2.5rem; } }
 
 .main__content {
@@ -596,6 +596,10 @@ body {
   display: flex;
   align-items: center;
   margin: 0; }
+  @media (max-width: 450px) {
+    .hello__content {
+      font-size: 9.5rem;
+      width: 90%; } }
 
 .subtitle__mainContent {
   width: 60%;
@@ -603,6 +607,10 @@ body {
   font-family: "Ubuntu", sans-serif;
   margin: 0;
   padding: 2.2rem 0 0 0; }
+  @media (max-width: 450px) {
+    .subtitle__mainContent {
+      font-size: 4.7rem;
+      width: 100%; } }
 
 /* --------------info content------------------------- */
 .info {
@@ -646,7 +654,7 @@ body {
   color: #969696; }
   @media (max-width: 450px) {
     .key {
-      font-size: 3rem; } }
+      font-size: 4rem; } }
 
 .value {
   font-family: "Rubik", sans-serif;
@@ -654,7 +662,7 @@ body {
   line-height: 140%; }
   @media (max-width: 450px) {
     .value {
-      font-size: 3rem; } }
+      font-size: 4rem; } }
 
 /* -------------------Autorization----------------------------- */
 .wrapper__autorization {
@@ -1093,11 +1101,6 @@ svg {
   align-items: center;
   margin: 5.2rem 0 0 0;
   column-gap: 2rem; }
-  @media (max-width: 450px) {
-    .favorite__cardGame {
-      justify-content: center; }
-      .favorite__cardGame span {
-        font-size: 9.4rem; } }
   .favorite__cardGame img {
     width: 7%;
     cursor: pointer; }
@@ -1105,6 +1108,11 @@ svg {
     cursor: pointer;
     font-family: "Caveat", cursive;
     font-size: 3.4rem; }
+  @media (max-width: 450px) {
+    .favorite__cardGame {
+      justify-content: center; }
+      .favorite__cardGame span {
+        font-size: 6.4rem; } }
 
 .main__description-cardGame {
   padding: 0; }
@@ -1175,7 +1183,7 @@ svg {
   font-family: "Comfortaa", cursive; }
   @media (max-width: 450px) {
     .desc__aboutGame {
-      font-size: 5.2rem;
+      font-size: 6.2rem;
       text-align: center; } }
 
 .desc__info {
@@ -1186,12 +1194,12 @@ svg {
   max-height: 15rem;
   overflow: hidden;
   transition: 0.4s;
-  line-height: 150%; }
+  line-height: 160%; }
   @media (max-width: 450px) {
     .desc__info {
       padding: 4.4rem 0 0 0;
-      font-size: 3.4rem;
-      min-height: 30rem; } }
+      font-size: 4.4rem;
+      min-height: 33rem; } }
 
 .desc__btnMore {
   width: 25%;
