@@ -16,41 +16,42 @@ include "$path/system/addReviews.php" ?>
                 <div class="content">
                     <div class="theiaStickySidebar">
                         <div class="cardGame">
+                            <div class="cardGame__left">
+                                <div class="main__cardGame">
 
-                            <div class="main__cardGame">
-
-                            </div>
+                                                            
+                                </div>
+                                <div class="comment__cardGame" id="comment">
+                                    <div class="reviews__cardGame">
+                                        <h3 class="reviews__cardGame-title">Отзывы</h3>
+                                        <form method = 'post' class='form__reviews'>
+                                            <div class="rating-area">
+                                                <input type="radio" id="star-5" name="rating" value="5">
+                                                <label for="star-5" title="Оценка «5»"></label>	
+                                                <input type="radio" id="star-4" name="rating" value="4">
+                                                <label for="star-4" title="Оценка «4»"></label>    
+                                                <input type="radio" id="star-3" name="rating" value="3">
+                                                <label for="star-3" title="Оценка «3»"></label>  
+                                                <input type="radio" id="star-2" name="rating" value="2">
+                                                <label for="star-2" title="Оценка «2»"></label>    
+                                                <input type="radio" id="star-1" name="rating" value="1">
+                                                <label for="star-1" title="Оценка «1»"></label>
+                                            </div>
+                                            <span class="ratingShow"></span>
+                                            <textarea class="reviewsText" placeholder="Напиши отзыв" name='reviewsText'></textarea>
+                                            <button  class='reviewsSend' name='reviewsSend'>Отправить</button>
+                                        </form>
+                                    </div>
+                                    <div class="feedBack__cardGame"></div>
+                                </div>
+                            </div>                          
                             <div class="right__cardGame">
                                 <div class="img__cardGame"></div>
                                 <div class="similar__cardGame">
                                     <h3 class="similar__title">Похожие игры</h3>
                                     <div class="schowSimilar"></div>
                                 </div>
-                            </div>
-                            <div class="comment__cardGame" id="comment">
-                                <div class="reviews__cardGame">
-                                    <h3 class="reviews__cardGame-title">Отзывы</h3>
-                                    <form method = 'post' class='form__reviews'>
-                                        <div class="rating-area">
-                                            <input type="radio" id="star-5" name="rating" value="5">
-                                            <label for="star-5" title="Оценка «5»"></label>	
-                                            <input type="radio" id="star-4" name="rating" value="4">
-                                            <label for="star-4" title="Оценка «4»"></label>    
-                                            <input type="radio" id="star-3" name="rating" value="3">
-                                            <label for="star-3" title="Оценка «3»"></label>  
-                                            <input type="radio" id="star-2" name="rating" value="2">
-                                            <label for="star-2" title="Оценка «2»"></label>    
-                                            <input type="radio" id="star-1" name="rating" value="1">
-                                            <label for="star-1" title="Оценка «1»"></label>
-                                        </div>
-                                        <span class="ratingShow"></span>
-                                        <textarea class="reviewsText" placeholder="Напиши отзыв" name='reviewsText'></textarea>
-                                        <button  class='reviewsSend' name='reviewsSend'>Отправить</button>
-                                    </form>
-                                </div>
-                                <div class="feedBack__cardGame"></div>
-                            </div>
-                            
+                            </div>                         
                         </div>
                     </div>
                 </div>
@@ -116,7 +117,7 @@ include "$path/system/addReviews.php" ?>
                                             <div class='video__cardGame'>
                                                 <h2 class='video__cardGame-title'>Видео обзор</h2>
                                                  <div class='video__cardGame-link'>
-                                                    <iframe width="650" height="366" src="${row.video}" 
+                                                    <iframe width="100%" " src="${row.video}" 
                                                     frameborder="0" allowfullscreen ></iframe>
                                                  </div>
                                             </div>

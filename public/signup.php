@@ -7,11 +7,13 @@ require_once "$path/system/sysSignup.php";
 
 <body>
     <div class="wrapper__autorization">
-        <img src="../img/back/backsignup.jpg" alt="" srcset="">
+        <div class="background__entry"></div>
+        <!-- <img src="../img/back/backsignup.jpg" alt="" srcset=""> -->
         <div class="_container">
             <? require_once "$path/private/header.php" ?>
             <main class="startPage">
                 <div class="entry-window__inner">
+                    
                     <div class="entry-window__item">
                         <div class="entry-window__title">Регистрация</div>
                         <div class="entry-window__form">
@@ -46,6 +48,10 @@ require_once "$path/system/sysSignup.php";
                                         <span class="bubble"></span>
                                     </span>
                                 </button>
+                                <div class="isThereAnAccount">
+                                    <span>Есть аккаунт?</span>
+                                    <a href="/login">Войдите</a>
+                                </div>
                             </form>
                         </div>
                     </div>

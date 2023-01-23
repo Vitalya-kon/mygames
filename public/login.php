@@ -7,7 +7,7 @@ require_once "$path/system/sysLogin.php";
   <? include_once "$path/private/head.php";?>
   <body>
     <div class="wrapper__autorization">
-      <img src="../img/back/backsignup.jpg" alt="" srcset="">
+    <div class="background__entry"></div>
       <div class="_container">
         <? include_once "$path/private/header.php";?>
         <main class="startPage">

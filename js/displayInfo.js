@@ -4,8 +4,6 @@
     let linkGameInfo = document.querySelectorAll(".content__item");
     // переменная gameInfo = классу .info
     let gameInfo = document.querySelectorAll(".info");
-    console.log(linkGameInfo);
-
     for (let i = 0; i < linkGameInfo.length; i++) {
       //  при наведение на элемент с классом .content__item"
       linkGameInfo[i].onmouseover = function () {
